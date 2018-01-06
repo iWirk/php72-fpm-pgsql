@@ -11,5 +11,6 @@ RUN apk update && \
         pdo_pgsql \
         pgsql \
         sockets \
-        intl
+        intl && \
+    apk del postgresql-dev
 CMD ["php-fpm"]
