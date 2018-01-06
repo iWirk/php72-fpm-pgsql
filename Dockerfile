@@ -11,5 +11,5 @@ RUN apk update && \
         pdo_pgsql \
         pgsql \
         sockets \
-        intl && \
+        intl \
 CMD ["php-fpm"]
